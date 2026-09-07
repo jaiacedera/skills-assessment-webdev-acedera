@@ -49,9 +49,14 @@ function App() {
 
       <section className="hero" id="home">
         <img src={cliffImage} alt="Rocky cliff above turquoise water in Batangas" />
-        <div className="hero-search"><label><span>Where to?</span><input aria-label="Where to" /></label><label><span>Travel type</span><select aria-label="Travel type"><option value=""> </option><option>Beach</option><option>Nature</option><option>Culture</option></select></label><label><span>When</span><input aria-label="When" /></label><label><span>Guest</span><input aria-label="Guest" /></label><button type="button" onClick={search} aria-label="Search destinations"><span /></button></div>
+        <div className="hero-content"><p className="hero-eyebrow">Discover Batangas</p><h1>Find your kind of<br /><em>Batangas</em></h1><p className="hero-intro">From world-class beaches and rich heritage to majestic mountains and unforgettable food trips - Batangas welcomes you.</p><div className="hero-chips"><button type="button">&#9815; Beaches</button><button type="button">&#9650; Mountains</button><button type="button">&#9962; Heritage</button><button type="button">&#10022; Food</button></div></div>
+        <p className="hero-note">Same<br />Sun.<br />New<br />Stories</p>
+        <div className="hero-search"><label><i aria-hidden="true">&#9679;</i><span>Where to?<strong>Nasugbu</strong></span><b>⌄</b></label><label><i aria-hidden="true">&#9830;</i><span>Travel type<strong>Nature</strong></span><b>⌄</b></label><label><i aria-hidden="true">&#9638;</i><span>When<strong>Add dates</strong></span><b>⌄</b></label><label><i aria-hidden="true">&#9679;</i><span>Guest<strong>1 guest</strong></span><b>⌄</b></label><button type="button" onClick={search} aria-label="Search destinations"><span /></button></div>
         <p className="search-notice" aria-live="polite">{searchNotice}</p>
+        <div className="hero-overview"><div><b>34</b><span>municipalities<small>One extraordinary province</small></span></div><div><b>&infin;</b><span>Curated itineraries<small>For every kind of traveler</small></span></div><div><b>&#9733;</b><span>Top-rated spots<small>Real stories, real experiences</small></span></div><div><b>&#9830;</b><span>Local culture &amp; cuisine<small>Authentic. Proudly Batangueno.</small></span></div></div>
       </section>
+
+      <section className="featured-heading"><div><p>EXPLORE MORE</p><h2>Featured Destinations</h2></div><a href="#destinations">View all destinations &#8594;</a></section>
 
       <section className="story" id="story">
         <div className="story-copy left"><p>BATANGAS TOURISM</p><h1>The perfect travel<br />place for you &amp;<br />your family</h1><span>Escape to a peaceful sanctuary surrounded by gardens, mountain views, and the quiet charm of Nasugbu, Batangas.</span></div>
