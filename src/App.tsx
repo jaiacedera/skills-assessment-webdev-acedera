@@ -7,6 +7,12 @@ import churchImage from './assets/image 2 (2).png'
 import waterParkImage from './assets/tourist 1.png'
 import beachImage from './assets/tourist 2.png'
 import mountainImage from './assets/tourist 3.png'
+import beachesImage from './assets/Rectangle 9.png'
+import adventureImage from './assets/Rectangle 10.png'
+import foodImage from './assets/Rectangle 11.png'
+import heritageImage from './assets/Rectangle 12.png'
+import localImage from './assets/Rectangle 13.png'
+import gemsImage from './assets/Rectangle 14.png'
 
 type Card = { image: string; title: string; location: string }
 
@@ -17,12 +23,12 @@ const cards: Card[] = [
 ]
 
 const experiences = [
-  { image: cliffImage, title: 'Beaches & Leisure' },
-  { image: mountainImage, title: 'Nature & Adventure' },
-  { image: churchImage, title: 'Heritage & Culture' },
-  { image: waterParkImage, title: 'Food & Gastronomy' },
-  { image: beachImage, title: 'Local Experiences' },
-  { image: churchImage, title: 'Hidden Gems' },
+  { image: beachesImage, title: 'Beaches & Leisure' },
+  { image: adventureImage, title: 'Nature & Adventure' },
+  { image: heritageImage, title: 'Heritage & Culture' },
+  { image: foodImage, title: 'Food & Gastronomy' },
+  { image: localImage, title: 'Local Experiences' },
+  { image: gemsImage, title: 'Hidden Gems' },
 ]
 
 function App() {
